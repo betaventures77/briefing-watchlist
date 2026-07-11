@@ -1,241 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Briefing semanal watchlist — 06-07-2026</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Briefing semanal watchlist — 11-07-2026</title>
 <style>
-  :root {
-    color-scheme: light;
-    --blue: #1F4E79;
-    --blue-light: #EAF1F7;
-    --gray: #555555;
-    --border: #E0E0E0;
-    --bg: #F7F8FA;
-  }
-  * { box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-    color: #222;
-    background: var(--bg);
-    margin: 0;
-    padding: 0;
-    line-height: 1.55;
-  }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
-  header.page-header {
-    background: var(--blue);
-    color: #fff;
-    padding: 32px 20px;
-  }
-  header.page-header .inner { max-width: 760px; margin: 0 auto; }
-  header.page-header h1 { margin: 0 0 8px; font-size: 26px; }
-  header.page-header .meta { font-size: 14px; opacity: 0.9; }
-  h2 {
-    color: var(--blue);
-    font-size: 19px;
-    border-bottom: 2px solid var(--blue-light);
-    padding-bottom: 6px;
-    margin-top: 44px;
-  }
-  h3 { font-size: 17px; margin-bottom: 4px; margin-top: 28px; }
-  .tag {
-    display: inline-block;
-    background: var(--blue-light);
-    color: var(--blue);
-    font-size: 12px;
-    font-weight: 600;
-    padding: 3px 9px;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
-  }
-  ul { padding-left: 20px; }
-  li { margin-bottom: 6px; }
-  .datos { font-size: 14.5px; }
-  .fuente { font-size: 13.5px; color: var(--gray); margin-top: 6px; }
-  .fuente a { color: var(--blue); }
-  .card {
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 20px 22px;
-    margin-bottom: 18px;
-  }
-  .sin-novedades {
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 18px 22px;
-    font-size: 14.5px;
-    color: var(--gray);
-  }
-  .notas-exclusion { font-size: 13.5px; color: var(--gray); font-style: italic; margin-top: 12px; }
-  .exec-summary { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 20px 22px; }
-  .exec-summary ul { margin: 0; padding-left: 20px; }
-  .footer-note { text-align: center; font-size: 12.5px; color: #999; margin-top: 50px; }
-  .cov { font-size: 13.5px; color: var(--gray); word-break: break-word; }
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin:0; background:#f4f6f8; color:#1c1c1c; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.55; }
+.wrap { max-width:860px; margin:0 auto; padding:0 20px 48px; }
+header { background:#1F4E79; color:#fff; padding:32px 20px; }
+header .inner { max-width:860px; margin:0 auto; }
+header h1 { margin:0 0 10px; font-size:28px; font-weight:650; letter-spacing:-0.3px; }
+header .meta { font-size:14px; opacity:.92; margin:2px 0; }
+h2 { font-size:19px; margin:36px 0 14px; color:#1F4E79; border-bottom:1px solid #dde3e9; padding-bottom:6px; }
+.card { background:#fff; border:1px solid #e2e7ec; border-radius:8px; padding:20px 22px; margin-bottom:16px; }
+.card h3 { margin:0 0 10px; font-size:17px; }
+.tag { display:inline-block; background:#e8f0f8; color:#1F4E79; font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.6px; padding:4px 9px; border-radius:4px; margin-bottom:10px; }
+.card p { margin:0 0 12px; font-size:15px; }
+.card ul { margin:0 0 12px; padding-left:20px; font-size:14px; }
+.card li { margin-bottom:4px; }
+.src { font-size:13px; color:#5a6672; }
+.src a { color:#1F4E79; word-break:break-word; }
+.cov { background:#fff; border:1px solid #e2e7ec; border-radius:8px; padding:16px 20px; font-size:13px; color:#43505c; margin-top:24px; }
+.cov code { background:#f0f3f6; padding:1px 5px; border-radius:3px; font-size:12px; }
+.exec ul { margin:0; padding-left:20px; font-size:15px; }
+.exec li { margin-bottom:8px; }
+.note { font-size:13px; color:#5a6672; margin-top:12px; }
+footer { text-align:center; font-size:12px; color:#7a848e; padding:24px 0 0; border-top:1px solid #dde3e9; margin-top:40px; }
 </style>
 </head>
 <body>
-
-<header class="page-header">
+<header>
   <div class="inner">
     <h1>Briefing semanal watchlist</h1>
-    <div class="meta">06-07-2026 (actualizado 09-07-2026) · Ventana: 29-06-2026 a 06-07-2026 · 35 empresas cubiertas</div>
+    <div class="meta"><strong>Fecha de ejecución:</strong> 11-07-2026</div>
+    <div class="meta"><strong>Ventana cubierta:</strong> 04-07-2026 a 11-07-2026 (últimos 7 días)</div>
+    <div class="meta"><strong>Empresas cubiertas:</strong> 35 · con hechos materiales: 6</div>
   </div>
 </header>
 
 <div class="wrap">
 
-  <p class="cov"><strong>Cobertura:</strong> CSU.TO, BLO.WA, SPR.WA, 3679.T, 3918.HK, TEQ.ST, ZOMD.V, TBBB, GLNG, 9618.HK, CCT.L, VLE.TO, 1127.HK, KSPI, TBLD.L, KBJ.WA, HHH.V, 3600.HK, AFM.V, EVO.ST, MLB.WA, SCO.MC, ALITL.PA, AEP.V, PTW.WA, TOA.WA, 8371.HK, 7974.T, REG.V, EQR.AX, AXL.V, QNT.WA, 0366.HK, GOOGL, ECK.WA</p>
+<div class="cov">
+  <strong>Cobertura:</strong> CSU.TO, BLO.WA, SPR.WA, 3679.T, 3918.HK, TEQ.ST, ZOMD.V, TBBB, GLNG, 9618.HK, CCT.L, VLE.TO, 1127.HK, KSPI, TBLD.L, KBJ.WA, HHH.V, 3600.HK, AFM.V, EVO.ST, MLB.WA, SCO.MC, ALITL.PA, AEP.V, PTW.WA, TOA.WA, 8371.HK, 7974.T, REG.V, EQR.AX, AXL.V, QNT.WA, 0366.HK, GOOGL, ECK.WA
+</div>
 
-  <h2>Resumen ejecutivo</h2>
-  <div class="exec-summary">
-    <ul>
-      <li>Alphabet (GOOGL) perdió el 2 de julio su recurso final ante el Tribunal de Justicia de la UE contra la multa antimonopolio de Android; la sanción de 4.125 M€ queda confirmada y es firme, sin más vías de recurso.</li>
-      <li>Toya (TOA.WA) liquidó el 3 de julio la recompra de hasta 8.754.000 acciones (~11,67% de los votos) a 10 PLN/acción, con prima del 17,6% sobre el cierre del 15 de junio, para su amortización.</li>
-      <li>Helius Minerals (HHH.V) anunció el 30 de junio el ejercicio de su opción para adquirir las filiales brasileñas de Colossus Minerals, dueñas del 75% del proyecto de oro y PGM Serra Pelada (Pará, Brasil); cierre pactado a más tardar el 31 de julio de 2026.</li>
-      <li>8 de las 35 empresas cubiertas registran hechos materiales en la ventana; las 27 restantes no tienen novedades.</li>
-    </ul>
-  </div>
+<h2>Resumen ejecutivo</h2>
+<div class="card exec">
+  <ul>
+    <li><strong>Valeura Energy (VLE.TO)</strong> publicó el 9 de julio su actualización operativa del Q2 2026: producción de 22,3 mbbls/d, ingresos de US$259,8 M, caja de US$316,5 M y cero deuda.</li>
+    <li><strong>Transacciones de insiders en dos direcciones opuestas:</strong> el CEO de tinyBuild (TBLD.L) compró 430.000 acciones entre el 2 y el 7 de julio, mientras que un consejero de Kaspi.kz (KSPI) vendió 43.993 ADS en operaciones fechadas los días 2, 6 y 7 de julio.</li>
+    <li><strong>Helius Minerals (HHH.V)</strong> emitió el 7 de julio un comunicado sobre la disputa civil vinculada al proyecto Serra Pelada, indicando que la sentencia no otorga derechos sobre el proyecto a la contraparte.</li>
+    <li>El resto de la cobertura (29 de 35 empresas) no registra hechos materiales publicados dentro de la ventana.</li>
+  </ul>
+</div>
 
-  <h2>Hechos por empresa</h2>
+<h2>Hechos por empresa</h2>
 
-  <div class="card">
-    <h3>GOOGL — Alphabet Inc.</h3>
-    <span class="tag">Regulatorio / Litigios</span>
-    <p>El 2 de julio de 2026 el Tribunal de Justicia de la Unión Europea desestimó el recurso final de Google y Alphabet contra la multa antimonopolio por prácticas relacionadas con Android (acuerdos que obligaban a los fabricantes de smartphones a preinstalar Google Search, Chrome y Play Store). La sanción, impuesta en 2018 y reducida por el Tribunal General en 2022, queda fijada en 4.125 M€. La resolución es firme y no cabe recurso adicional.</p>
-    <div class="datos">
-      <strong>Datos clave:</strong>
-      <ul>
-        <li>Multa confirmada: 4.125 M€</li>
-        <li>Fecha de la resolución: 2 de julio de 2026 (Tribunal de Justicia de la UE)</li>
-        <li>Origen: prácticas de distribución de Android (2018), reducida en 2022, ahora firme</li>
-      </ul>
-    </div>
-    <div class="fuente">Fuente: <a href="https://www.cnbc.com/2026/07/02/alphabet-google-android-eu-antitrust-fine-4-1-billion-euro-appeal.html" target="_blank" rel="noopener">CNBC — Google loses fight over record EU antitrust fine</a></div>
-  </div>
+<div class="card">
+  <h3>VLE.TO — Valeura Energy</h3>
+  <span class="tag">Operativo / Resultados preliminares</span>
+  <p>El 9 de julio Valeura publicó su actualización operativa y financiera del segundo trimestre de 2026, correspondiente a sus activos en el Golfo de Tailandia. La compañía informó de producción, ventas y caja récord, y anunció la perforación del intervalo horizontal más largo del Golfo de Tailandia y su primer pozo multilateral complejo en el campo Nong Yao. Los resultados financieros completos no auditados del Q2 2026 se publicarán el 6 de agosto de 2026.</p>
+  <ul>
+    <li>Producción de petróleo (interés económico): 22,3 mbbls/d de media</li>
+    <li>Ventas: 2,454 millones de barriles a un precio medio realizado de US$105,8/bbl</li>
+    <li>Ingresos: US$259,8 millones</li>
+    <li>Flujo de caja libre trimestral estimado: aprox. US$100 millones</li>
+    <li>Caja a cierre de trimestre: US$316,5 millones, sin deuda</li>
+    <li>Campo Manora: acuerdo con el regulador tailandés para reducir el coste futuro estimado de desmantelamiento; la garantía depositada baja y la caja restringida se reduce un 31%</li>
+  </ul>
+  <p class="src">Fuente: <a href="https://www.globenewswire.com/news-release/2026/07/09/3324553/0/en/Valeura-Energy-Inc-Q2-2026-Operations-Update.html">Valeura Energy Inc.: Q2 2026 Operations Update (09-07-2026)</a></p>
+</div>
 
-  <div class="card">
-    <h3>REG.V — Regulus Resources Inc.</h3>
-    <span class="tag">Otro / Proyecto</span>
-    <p>El 30 de junio de 2026 Regulus y Compañía Minera Coimolache completaron la primera fase del acuerdo de colaboración anunciado el 25 de julio de 2024, con la finalización de una estimación de recursos minerales (MRE) para el proyecto integrado Coimolache Sulphides/AntaKori de cobre-oro. Es la primera estimación totalmente no restringida por límites de propiedad elaborada por un tercero independiente. El informe no se hará público de forma inmediata; la compañía no dará más actualizaciones hasta que se decidan los siguientes pasos sobre el MRE y el PEA.</p>
-    <div class="datos">
-      <strong>Datos clave:</strong>
-      <ul>
-        <li>Fecha de finalización del MRE: 30 de junio de 2026</li>
-        <li>Proyecto: Coimolache Sulphides/AntaKori (cobre-oro, Cajamarca, Perú)</li>
-        <li>Próximos pasos: sin calendario definido para decisiones sobre MRE y PEA</li>
-      </ul>
-    </div>
-    <div class="fuente">Fuente: <a href="https://regulusresources.com/news/2026/regulus-announces-completion-of-mineral-resource-estimate-for-integrated-coimolache-sulphide-antakori-copper-gold-project/" target="_blank" rel="noopener">regulusresources.com — Completion of Mineral Resource Estimate</a></div>
-  </div>
+<div class="card">
+  <h3>TBLD.L — tinyBuild, Inc.</h3>
+  <span class="tag">Insider / Compra</span>
+  <p>Mediante RNS publicado el 9 de julio, tinyBuild comunicó que su consejero delegado, Alex Nichiporchik, adquirió 430.000 acciones ordinarias en el mercado AIM de la Bolsa de Londres. Las operaciones se ejecutaron entre el 2 y el 7 de julio de 2026. La comunicación se realiza en cumplimiento del Reglamento de Abuso de Mercado del Reino Unido.</p>
+  <ul>
+    <li>Acciones adquiridas: 430.000 ordinarias</li>
+    <li>Precio medio: £0,109 por acción</li>
+    <li>Fechas de las operaciones: 2 a 7 de julio de 2026</li>
+    <li>Participación resultante del CEO: 230.706.100 acciones (58,08% del capital emitido)</li>
+  </ul>
+  <p class="src">Fuente: <a href="https://www.investegate.co.uk/announcement/rns/tinybuild-inc-di-reg-s-cat-3---tbld/director-pdmr-shareholding/9659712">RNS — Director/PDMR Shareholding, tinyBuild Inc. (09-07-2026)</a></p>
+</div>
 
-  <div class="card">
-    <h3>0366.HK — Luks Group (Vietnam Holdings) Company Limited</h3>
-    <span class="tag">Asignación de capital / Recompra</span>
-    <p>Luks Group ejecutó varias recompras de acciones propias dentro de la ventana: 6.000 acciones el 29 de junio (HK$4.740, ~HK$0,79/acción), 400.000 acciones el 30 de junio (HK$320.000) y 600.000 acciones el 2 de julio (HK$480.000, HK$0,80/acción), en el marco de su programa de recompra en curso.</p>
-    <div class="datos">
-      <strong>Datos clave:</strong>
-      <ul>
-        <li>29 jun: 6.000 acciones, HK$4.740 (~HK$0,79/acción)</li>
-        <li>30 jun: 400.000 acciones, HK$320.000</li>
-        <li>2 jul: 600.000 acciones, HK$480.000 (HK$0,80/acción)</li>
-      </ul>
-    </div>
-    <div class="fuente">Fuente: <a href="https://www.tipranks.com/stocks/hk:0366" target="_blank" rel="noopener">TipRanks — Luks Group (Vietnam Holdings), historial de recompras</a></div>
-  </div>
+<div class="card">
+  <h3>KSPI — Joint Stock Company Kaspi.kz</h3>
+  <span class="tag">Insider / Venta</span>
+  <p>Los registros Form 4 presentados ante la SEC recogen ventas de mercado abierto de ADS por parte del consejero Vyacheslav Kim, con operaciones fechadas los días 2, 6 y 7 de julio de 2026. El total reportado asciende a 43.993 ADS, con precios de ejecución en el rango de los 80 y 90 dólares por ADS.</p>
+  <ul>
+    <li>ADS vendidos (total reportado): 43.993</li>
+    <li>Fechas de transacción: 2, 6 y 7 de julio de 2026</li>
+    <li>Rango de precios: entre los 80 altos y los 90 bajos por ADS</li>
+    <li>Contexto pendiente: la adquisición de Rabobank A.Ş. (Türkiye), aprobada por el regulador BDDK el 24-06-2026, tiene cierre previsto en julio de 2026 sujeto a condiciones habituales; a la fecha de este briefing no consta comunicación de cierre</li>
+  </ul>
+  <p class="src">Fuente: <a href="https://www.stocktitan.net/sec-filings/KSPI/form-4-joint-stock-co-kaspi-kz-insider-trading-activity-3e3e55344b89.html">SEC Form 4 — Kaspi.kz, actividad de insiders</a></p>
+</div>
 
-  <div class="card">
-    <h3>TOA.WA — Toya S.A.</h3>
-    <span class="tag">Asignación de capital / Recompra</span>
-    <p>Toya invitó a los accionistas a vender hasta 8.754.000 acciones propias (~11,67% de los derechos de voto) a 10 PLN/acción. El periodo de aceptación de ofertas fue del 17 al 30 de junio de 2026 y la liquidación/adquisición se produjo el 3 de julio de 2026. Las acciones adquiridas se destinarán a amortización.</p>
-    <div class="datos">
-      <strong>Datos clave:</strong>
-      <ul>
-        <li>Volumen máximo: 8.754.000 acciones (~11,67% de los votos)</li>
-        <li>Precio: 10 PLN/acción (prima ~17,6% sobre el cierre del 15 de junio de 2026)</li>
-        <li>Periodo de la oferta: 17-30 de junio de 2026; liquidación: 3 de julio de 2026</li>
-        <li>Destino: amortización de las acciones adquiridas</li>
-      </ul>
-    </div>
-    <div class="fuente">Fuente: <a href="https://biznes.pap.pl/wiadomosci/firmy/toya-zaprasza-do-skladania-ofert-sprzedazy-do-8754000-akcji-spolki-po-10-zlszt" target="_blank" rel="noopener">biznes.pap.pl — Toya zaprasza do składania ofert sprzedaży</a></div>
-  </div>
+<div class="card">
+  <h3>HHH.V — Helius Minerals</h3>
+  <span class="tag">Litigio / Regulatorio</span>
+  <p>El 7 de julio Helius Minerals emitió un comunicado en respuesta a declaraciones públicas de Phoenix Gems relativas a una disputa civil que afecta a Phoenix Gems do Brasil Ltda. La compañía indica que la sentencia no confiere a Brent Smith, Phoenix Gems ni Phoenix Gems do Brasil legitimación, título, interés ni derechos sobre el proyecto Serra Pelada ni sobre sus derechos mineros.</p>
+  <ul>
+    <li>Fecha del comunicado: 7 de julio de 2026</li>
+    <li>Objeto: disputa civil relativa a Phoenix Gems do Brasil Ltda.</li>
+    <li>Posición de la compañía: la sentencia no otorga derechos sobre el proyecto Serra Pelada a la contraparte</li>
+    <li>Estado del proyecto: la adquisición de Serra Pelada sigue pendiente de completarse, según lo comunicado el 30-06-2026</li>
+  </ul>
+  <p class="src">Fuente: <a href="https://investingnews.com/helius-minerals-comments-on-recent-statements-regarding-the-serra-pelada-project/">Helius Minerals Comments on Recent Statements Regarding the Serra Pelada Project (07-07-2026)</a></p>
+</div>
 
-  <div class="card">
-    <h3>HHH.V — Helius Minerals Limited</h3>
-    <span class="tag">M&amp;A</span>
-    <p>El 30 de junio de 2026 Helius Minerals anunció el ejercicio de su opción para adquirir la totalidad de las cuotas de las filiales brasileñas de Colossus Minerals Inc. ("Colossus Brazil"), que posee el 75% de Companhia de Desenvolvimento Mineral (SPCDM), titular de los derechos mineros del proyecto de oro y platinoides Serra Pelada, en el estado de Pará, Brasil. Helius y Colossus acordaron que el cierre de la transacción se producirá a más tardar el 31 de julio de 2026, sujeto a las condiciones del acuerdo definitivo y a las decisiones pendientes de la Agência Nacional de Mineração sobre la concesión minera.</p>
-    <div class="datos">
-      <strong>Datos clave:</strong>
-      <ul>
-        <li>Fecha de ejercicio de la opción: 30 de junio de 2026</li>
-        <li>Activo: Serra Pelada Gold-PGM Project (Pará, Brasil), 75% vía Colossus Brazil/SPCDM</li>
-        <li>Fecha límite de cierre pactada: 31 de julio de 2026</li>
-      </ul>
-    </div>
-    <div class="fuente">Fuente: <a href="https://heliusminerals.com/news-announcements/" target="_blank" rel="noopener">heliusminerals.com — comunicados de la compañía</a></div>
-  </div>
+<div class="card">
+  <h3>CCT.L — The Character Group plc</h3>
+  <span class="tag">Asignación de capital / Recompra</span>
+  <p>Character Group continuó la ejecución de su programa de recompra de acciones ya anunciado, con una compra comunicada por RNS el 9 de julio de 2026. La compañía actualizó en el mismo comunicado el número de acciones en circulación y los derechos de voto totales.</p>
+  <ul>
+    <li>Acciones recompradas en la operación comunicada: 9.000 ordinarias</li>
+    <li>Precio: 295 peniques por acción</li>
+    <li>Fecha: 9 de julio de 2026</li>
+    <li>Efecto: reducción del capital en circulación y actualización de derechos de voto totales</li>
+  </ul>
+  <p class="src">Fuente: <a href="https://www.investegate.co.uk/announcement/rns/character-group--cct/transaction-in-own-shares-and-total-voting-rights/9661888">RNS — Transaction in Own Shares and Total Voting Rights, Character Group plc</a></p>
+</div>
 
-  <div class="card">
-    <h3>ALITL.PA — IT Link SA</h3>
-    <span class="tag">Dividendo</span>
-    <p>La junta general de accionistas de IT Link, celebrada el 25 de junio de 2026, fijó el dividendo del ejercicio 2025 en 0,50 €/acción en efectivo. La fecha ex-dividendo es el 6 de julio de 2026 y el pago se realizará el 8 de julio de 2026.</p>
-    <div class="datos">
-      <strong>Datos clave:</strong>
-      <ul>
-        <li>Dividendo: 0,50 €/acción (ejercicio 2025)</li>
-        <li>Fecha ex-dividendo: 6 de julio de 2026; pago: 8 de julio de 2026</li>
-        <li>Aprobado en junta general del 25 de junio de 2026</li>
-      </ul>
-    </div>
-    <div class="fuente">Fuente: <a href="https://www.webdisclosure.fr/press-release/it-link-epa-itl-groupe-it-link-paiement-du-dividende-2025-modalite-de-la-mise-en-paiement-du-dividende-D6dyW15OOQ4" target="_blank" rel="noopener">webdisclosure.fr — IT Link, paiement du dividende 2025</a></div>
-  </div>
+<div class="card">
+  <h3>3918.HK — NagaCorp Ltd.</h3>
+  <span class="tag">Otro / Administrativo</span>
+  <p>NagaCorp comunicó a la Bolsa de Hong Kong el cambio de su agente de registro de acciones de la sucursal de Hong Kong a Union Registrars Limited. El cambio no afecta a la operativa del negocio, pero modifica el circuito de registro y transferencia de títulos para los accionistas.</p>
+  <ul>
+    <li>Nuevo agente de registro: Union Registrars Limited</li>
+    <li>Fecha efectiva: 20 de julio de 2026</li>
+    <li>Certificados no recogidos antes de las 16:30 del 17 de julio de 2026 pasarán al nuevo agente</li>
+  </ul>
+  <p class="src">Fuente: <a href="https://www.tipranks.com/news/company-announcements/nagacorp-shifts-hong-kong-share-registry-to-union-registrars">Anuncio HKEX — NagaCorp, cambio de agente de registro en Hong Kong</a></p>
+</div>
 
-  <div class="card">
-    <h3>MLB.WA — MakoLab SA</h3>
-    <span class="tag">Directivo</span>
-    <p>Tras la dimisión del vicepresidente Piotr Ignaczak (efectiva el 30 de junio de 2026, anunciada el 12 de junio), el consejo de administración de MakoLab quedó reducido de 4 a 3 miembros a partir del 1 de julio de 2026. La presidencia había cambiado de manos ese mismo 12 de junio, con Dariusz Głażewski sustituyendo a Mirosław Sopek.</p>
-    <div class="datos">
-      <strong>Datos clave:</strong>
-      <ul>
-        <li>Consejo reducido de 4 a 3 miembros, efectivo el 1 de julio de 2026</li>
-        <li>Dimisión del vicepresidente Piotr Ignaczak, efectiva el 30 de junio de 2026</li>
-        <li>Cambio de presidencia anunciado el 12 de junio de 2026 (Głażewski sustituye a Sopek)</li>
-      </ul>
-    </div>
-    <div class="fuente">Fuente: <a href="https://www.money.pl/gielda/komunikaty/7297098975142977.html" target="_blank" rel="noopener">money.pl — Komunikat spółki: Zmiany w składzie Zarządu MakoLab S.A.</a></div>
-  </div>
+<h2>Sin novedades materiales</h2>
+<div class="card">
+  <p>CSU.TO, BLO.WA, SPR.WA, 3679.T, TEQ.ST, ZOMD.V, TBBB, GLNG, 9618.HK, 1127.HK, KBJ.WA, 3600.HK, AFM.V, EVO.ST, MLB.WA, SCO.MC, ALITL.PA, AEP.V, PTW.WA, TOA.WA, 8371.HK, 7974.T, REG.V, EQR.AX, AXL.V, QNT.WA, 0366.HK, GOOGL, ECK.WA</p>
+  <p class="note"><strong>Notas de exclusión</strong> (hechos con efecto dentro de la ventana pero cuya decisión societaria es anterior, o cuya materialidad no supera el filtro):</p>
+  <ul>
+    <li><strong>CSU.TO</strong>: pago del dividendo trimestral de US$1,00/acción el 10-07-2026; la declaración y la fecha de registro (19-06-2026) son anteriores a la ventana.</li>
+    <li><strong>GOOGL</strong>: la incorporación al Dow Jones Industrial Average se hizo efectiva el 29-06-2026, fuera de la ventana. Los resultados del Q2 2026 se publicarán el 22-07-2026.</li>
+    <li><strong>ALITL.PA</strong>: pago del dividendo 2025 el 08-07-2026; decisión aprobada con anterioridad. Facturación del H1 2026 prevista para el 06-08-2026.</li>
+    <li><strong>PTW.WA</strong>: pago del dividendo de 5,89 PLN brutos/acción previsto para el 13-07-2026; aprobado por la junta con anterioridad.</li>
+    <li><strong>REG.V</strong>: concesión de 2.175.000 opciones a 4,18 CAD anunciada el 03-07-2026, un día antes del inicio de la ventana.</li>
+    <li><strong>EQR.AX</strong>: solicitudes de admisión a cotización de 1.259.770 y 375.000 acciones nuevas (3 y 7 de julio) derivadas del ejercicio de opciones de empleados; operativa rutinaria sin impacto material.</li>
+    <li><strong>EVO.ST</strong> y <strong>TEQ.ST</strong>: ambas publican resultados del Q2 2026 el 17-07-2026, fuera de la ventana. Las recompras de acciones propias de Evolution comunicadas corresponden al periodo 22-26 de junio.</li>
+    <li><strong>0366.HK</strong>: recompras de acciones propias ejecutadas el 29 y 30 de junio y el 2 de julio, fuera de la ventana.</li>
+    <li><strong>8371.HK</strong>: resultados anuales del ejercicio FY2026 (ingresos de HK$1.360 M, +11%; beneficio neto de HK$117,4 M, +23%; dividendo de HK$0,09) publicados antes del inicio de la ventana.</li>
+    <li><strong>GLNG</strong>: resultados del Q2 2026 previstos para el 13-08-2026. No hay comunicaciones oficiales dentro de la ventana.</li>
+  </ul>
+</div>
 
-  <div class="card">
-    <h3>CCT.L — The Character Group plc</h3>
-    <span class="tag">Asignación de capital / Recompra</span>
-    <p>Bajo el programa de recompra de acciones lanzado el 2 de febrero de 2026 y ejecutado a través de Panmure Liberum, Character Group continuó comprando acciones propias en los días previos al 6 de julio de 2026. Tras las últimas transacciones reportadas, la compañía mantiene 1.983.059 acciones en autocartera y 17.380.949 acciones en circulación (excluida la autocartera).</p>
-    <div class="datos">
-      <strong>Datos clave:</strong>
-      <ul>
-        <li>Acciones en autocartera tras las últimas compras: 1.983.059</li>
-        <li>Acciones en circulación (ex-autocartera): 17.380.949</li>
-        <li>Programa vigente desde el 2 de febrero de 2026 hasta el 14 de enero de 2027 (o antes, según ejecución)</li>
-      </ul>
-    </div>
-    <div class="fuente">Fuente: <a href="https://www.investegate.co.uk/announcement/rns/character-group--cct/transaction-in-own-shares-and-total-voting-rights/9650558" target="_blank" rel="noopener">Investegate — Character Group, Transaction in Own Shares and Total Voting Rights</a></div>
-  </div>
-
-  <h2>Sin novedades materiales</h2>
-  <div class="sin-novedades">
-    CSU.TO, BLO.WA, SPR.WA, 3679.T, 3918.HK, TEQ.ST, ZOMD.V, TBBB, GLNG, 9618.HK, VLE.TO, 1127.HK, KSPI, TBLD.L, KBJ.WA, 3600.HK, AFM.V, EVO.ST, SCO.MC, AEP.V, PTW.WA, 8371.HK, 7974.T, EQR.AX, AXL.V, QNT.WA, ECK.WA
-    <div class="notas-exclusion">
-      Notas de exclusión: Constellation Software (CSU.TO) cerró la adquisición de DerbySoft el 1 de junio y su dividendo trimestral (pago 10 de julio) fue declarado junto a resultados de Q1, ambos fuera de la ventana. Kaspi.kz (KSPI) recibió aprobación regulatoria en Turquía para adquirir Rabobank el 24 de junio, fuera de la ventana. PTWP (PTW.WA) aprobó en junta del 25 de junio un dividendo de 5,89 PLN/acción (ex-dividendo 3 de julio, pago 13 de julio); la decisión societaria quedó fuera de la ventana de 7 días, por lo que no se incluye como hecho nuevo. JD.com (9618.HK) celebró su junta anual el 29 de junio como foro abierto sin propuestas sometidas a votación, sin contenido informativo adicional. EQ Resources (EQR.AX) recibió una inversión estratégica ampliada de Elmet Group el 26 de junio, tres días antes del inicio de la ventana. Arrow Exploration (AXL.V) publicó resultados del pozo IC-2 el 17 de junio, fuera de la ventana. Eurosnack (ECK.WA) aprobó en junta general del 26 de junio un dividendo de 0,15 PLN/acción (fecha de dividendo 3 de julio); la decisión societaria quedó fuera de la ventana de 7 días.
-    </div>
-  </div>
-
-  <h2>Contexto sectorial / macro</h2>
-  <p>Varias de las cotizadas europeas de la cobertura (Toya, IT Link, MakoLab, PTWP, Character Group) concentran sus juntas generales, dividendos y programas de recompra entre finales de junio y julio, coincidiendo con el calendario habitual de temporada de juntas anuales en Europa; no se identifica ningún catalizador macro transversal adicional (tipos, materias primas, regulación) que afecte a un número significativo de las empresas de la cobertura en esta ventana.</p>
-
-  <div class="footer-note">Generado automáticamente cada semana a partir de fuentes primarias (filings, IR, prensa financiera). Última actualización: 09-07-2026 (cobertura ampliada a 35 empresas).</div>
+<footer>
+  Briefing semanal watchlist · Última actualización: 11-07-2026<br>
+  Documento factual de seguimiento. No constituye asesoramiento de inversión.
+</footer>
 
 </div>
 </body>
